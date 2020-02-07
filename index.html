@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Live breakscreen for Twitch.tv/aznmike123">
+	<meta name="keywords" content="twitch, overlay">
+	<meta name="author" content="Michael Macasiano">
+	<title>Video games are awful</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<script>
+	var slideIndex = 0;
+
+	function carousel() {
+	var i;
+	var x = document.getElementsByClassName("sideRight");
+	for (i = 0; i < x.length; i++) {
+	x[i].style.display = "none";
+	}
+	slideIndex++;
+	if (slideIndex > x.length) {slideIndex = 1}
+	x[slideIndex-1].style.display = "block";
+	setTimeout(carousel, 33000); // Change image every 34 seconds
+	}
+</script>
+
+<body onload="carousel()">
+	<div id="sideLeft">
+		<div class="contentLeft">
+			<div class="contentTitle">
+				aznmike
+			</div>
+			
+			<div class="contentBody">
+				I'm Michael. A very slightly above average gamer.
+				Follow me on Twitter for updates on things.
+			</div>
+			<div class="contentHighlight cBlue">@mikeHEARTu</div>
+		</div>
+	</div>
+
+	<div class="sideRightBG">
+		<!-- <img src="img/sub-badges-1y-36px.png"> -->
+	</div>
+
+	<div class="sideRight">
+		<video autoplay muted loop height="100%" class="videoContent" id="aznmikeBRB">
+			<source src="img/brokchrd.webm" type="video/webm">				
+		</video>
+		<div class="videoOverlay"></div>
+
+		<div class="contentRight">
+			<div class="contentTitle rightAnim1">
+				Intermission
+			</div>
+			
+			<div class="contentBody rightAnim2">
+				I hope you're enjoying the stream. Be sure to like, comment, and subscribe... wait...			
+			</div>
+			<div class="contentHighlight cPurple rightAnim3">twitch.tv/aznmike</div>
+		</div>
+	</div>
+	<div class="sideRight">
+		<video autoplay muted loop height="100%" class="videoContent" id="aznmikeNowPlaying">
+			<source src="img/ffxiv-gameplay.mp4" type="video/mp4">
+		</video>
+		<div class="videoOverlay"></div>
+
+		<div class="contentRight">
+			<div class="contentTitle rightAnim1">
+				Now Playing
+			</div>
+			
+			<div class="contentBody rightAnim2">
+				We're currently playing the Final Fantasy XIV.			
+			</div>
+			<div class="contentHighlight cPurple rightAnim3">twitch.tv/aznmike</div>
+		</div>
+	</div>
+	<div class="sideRight">
+		<video autoplay muted loop height="100%" class="videoContent" id="aznmikeVGBC">
+			<source src="img/vice-city-gameplay.mp4" type="video/mp4">
+		</video>
+		<div class="videoOverlay"></div>
+
+		<div class="contentRight">
+			<div class="contentTitle rightAnim1">
+				Video Game Book Club
+			</div>
+			
+			<div class="contentBody rightAnim2">
+				Nelson and I played Grand Theft Auto: Vice City. You can hear us talk about it.			
+			</div>
+			<div class="contentHighlight cPink rightAnim3">VideoGameBook.club</div>
+		</div>
+	</div>
+	<div class="sideRight">
+		<video autoplay muted loop height="100%" class="videoContent" id="aznmikeHumble">
+			<!-- <source src="img/ffxiv-gameplay.mp4" type="video/mp4"> -->
+		</video>
+		<div class="videoOverlay"></div>
+
+		<div class="contentRight">
+			<div class="contentTitle rightAnim1">
+				Humble Choice
+			</div>
+			
+			<div class="contentBody rightAnim2">
+				Subscribe to Humble Choice and pick up to 9 games to keep from a new set of games each month. This month, you can pick between games like Frostpunk, Pathfinder: Kingmaker, Book of Demons, and more.			
+			</div>
+			<div class="contentHighlight cRed rightAnim3">#ad - !humbleChoice</div>
+		</div>
+	</div>
+</body>
+</html>
