@@ -31,7 +31,7 @@ body
 	text-align: right;
 	/* background: rgba(45,52,54,0.5); */
 
-	animation: fadeInDown 0.5s 1s ease-out backwards, fadeOutDown 0.5s 32.5s ease-in forwards;
+	animation: fadeInDown 0.5s 0s ease-out backwards, fadeOutDown 0.5s 32.5s ease-in forwards;
 }
 .sideRightBG
 {
@@ -156,15 +156,15 @@ body
 }
 .rightAnim1
 {
-	animation: fadeInLeft 0.5s 1.5s backwards, fadeInLeft 0.5s 32s reverse forwards;
+	animation: fadeInLeft 0.5s 0.5s backwards, fadeInLeft 0.5s 32s reverse forwards;
 }
 .rightAnim2
 {
-	animation: fadeInLeft 0.5s 1.7s backwards, fadeInLeft 0.5s 31.8s reverse forwards;
+	animation: fadeInLeft 0.5s 0.7s backwards, fadeInLeft 0.5s 31.8s reverse forwards;
 }
 .rightAnim3
 {
-	animation: fadeInLeft 0.5s 1.9s backwards, fadeInLeft 0.5s 31.6s reverse forwards;
+	animation: fadeInLeft 0.5s 0.9s backwards, fadeInLeft 0.5s 31.6s reverse forwards;
 }
 
 @keyframes fadeIn
